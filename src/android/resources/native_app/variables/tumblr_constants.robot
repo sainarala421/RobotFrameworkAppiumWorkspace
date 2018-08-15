@@ -11,7 +11,7 @@ ${PASSWORD_FIELD}          id=com.tumblr:id/password
 ${USERNAME_FIELD}          id=com.tumblr:id/username
 ${NEXT_BUTTON}             id=com.tumblr:id/primary_button
 
-${p_emailAddress}           mobileautomationtestuser@gmail.com
+${CONTINUE_BUTTON}          id=com.tumblr:id/primary_button
 ${HOME_BUTTON}              id=com.tumblr:id/topnav_dashboard_button_img_active
 ${SEARCH_BUTTON}            id=com.tumblr:id/topnav_explore_button_img_active
 ${MESSAGES_BUTTON}          id=com.tumblr:id/notification_button_wrapper

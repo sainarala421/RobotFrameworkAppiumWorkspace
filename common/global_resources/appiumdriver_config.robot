@@ -23,7 +23,7 @@ Setup Desired Capabilities For "${e_MOBILE_OS}" Native App For "${e_APPLICATION_
     ...    platformVersion=${DEV.${e_MOBILE_OS}.PLATFORM_VERSION}
     ...    deviceName=${DEV.${e_MOBILE_OS}.DEVICE_NAME}
     ...    app=${e_APPLICATION_PATH}
-    ...    appPackage=${DEV.${e_MOBILE_OS}.PACKAGE_NAME}
+    # ...    appPackage=${DEV.${e_MOBILE_OS}.PACKAGE_NAME}
     ...    appActivity=${DEV.${e_MOBILE_OS}.ACTIVITY_NAME}
     Log    ${t_DefaultDC}
     Set Suite Variable    ${DESIRED_CAPABILITY}    ${t_DefaultDC}

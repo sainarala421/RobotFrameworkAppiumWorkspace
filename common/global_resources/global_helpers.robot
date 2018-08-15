@@ -9,6 +9,14 @@ User Clicks "${e_ELEMENT_NAME}" "${e_ELEMENT_TYPE}"
     Run And Wait Until Keyword Succeeds
     ...    Click Element    ${${e_ELEMENT_NAME} ${e_ELEMENT_TYPE}}
 
+User Inputs Text "${e_STRING}" In "${e_ELEMENT_NAME}"
+    Run And Wait Until Keyword Succeeds
+    ...    Input Text    ${ ${e_ELEMENT_NAME} }    ${e_STRING}
+
+User Inputs Password "${e_STRING}" In "${e_ELEMENT_NAME}"
+    Run And Wait Until Keyword Succeeds
+    ...    Input Password    ${ ${e_ELEMENT_NAME} }    ${e_STRING}
+
 The "${e_ELEMENT}" Is "${e_ELEMENT_STATE}"
     The "${e_ELEMENT}" Should Be "${e_ELEMENT_STATE}"
 
@@ -54,7 +62,7 @@ Launch "${e_MOBILE_OS}" Application "${e_APPLICATION_PATH}"
     Setup Desired Capabilities For "${e_MOBILE_OS}" Native App For "${e_APPLICATION_PATH}"
     Open Application    ${DEV.APPIUM_SERVER}    platformName=${DESIRED_CAPABILITY.platformName}
     ...    platformVersion=${DESIRED_CAPABILITY.platformVersion}    deviceName=${DESIRED_CAPABILITY.deviceName}
-    ...    app=${DESIRED_CAPABILITY.app}    appPackage=${DESIRED_CAPABILITY.appPackage}
+    ...    app=${DESIRED_CAPABILITY.app}    #appPackage=${DESIRED_CAPABILITY.appPackage}
     ...    appActivity=${DESIRED_CAPABILITY.appActivity}
 
 
