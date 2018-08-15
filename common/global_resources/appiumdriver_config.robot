@@ -4,8 +4,7 @@ ${DEV.APPIUM_SERVER}               http://127.0.0.1:4723/wd/hub
 ${DEV.IOS.PLATFORM_VERSION}        11.2
 ${DEV.IOS.PLATFORM_NAME}           iOS
 ${DEV.IOS.DEVICE_NAME}             iPhone Simulator
-${DEV.APP.PATH}                    /Users/jarvis2/Documents/AppiumWorkspace/
-${DEV.IOS.APP}                     ${DEV.APP.PATH}iOSApp/CandySearch.app
+${DEV.IOS.APP}                     %{APP_PATH}iOSApp/CandySearch.app
 ${DEV.IOS.PACKAGE_NAME}            ${EMPTY}
 ${DEV.IOS.ACTIVITY_NAME}           ${EMPTY}
 
@@ -13,7 +12,7 @@ ${DEV.IOS.ACTIVITY_NAME}           ${EMPTY}
 ${DEV.ANDROID.PLATFORM_VERSION}    6.0
 ${DEV.ANDROID.PLATFORM_NAME}       Android
 ${DEV.ANDROID.DEVICE_NAME}         testAVD
-${DEV.ANDROID.APP}                 ${DEV.APP.PATH}apk/com.tumblr.com.apk
+${DEV.ANDROID.APP}                 %{APP_PATH}apk/com.tumblr.apk
 ${DEV.ANDROID.PACKAGE_NAME}        com.tumblr.onboarding
 ${DEV.ANDROID.ACTIVITY_NAME}       com.tumblr.onboarding.PreOnboardingActivity
 

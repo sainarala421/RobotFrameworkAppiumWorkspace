@@ -4,10 +4,6 @@ report.html
 selenium-screenshot-*
 */Results
 .bash_history
-Vagrant-robotframeworktesting/.vagrant/
-VagrantAvailabilityTestResults/
-VagrantFunctionalTestResults/
-VagrantEndToEndTestResults/
 *pabot_results/
 *.pyc
 *.egg-info
@@ -23,3 +19,6 @@ xunit.xml
 nosetests.xml
 geckodriver.log
 *DS_Store
+package-lock.json
+node_modules
+Results
