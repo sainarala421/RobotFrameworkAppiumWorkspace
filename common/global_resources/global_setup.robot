@@ -10,7 +10,6 @@ Resource          appiumdriver_config.robot
 Resource          global_filepaths.robot
 Resource          global_helpers.robot
 
-
 *** Variables ***
 #=================================================#
 #                Timeout and Wait                 #

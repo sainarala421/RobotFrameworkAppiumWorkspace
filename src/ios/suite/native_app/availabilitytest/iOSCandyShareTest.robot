@@ -43,4 +43,3 @@ Scenario: User Successfully Opens The Toffee Apple Page
     When User Clicks "Toffee Apple" "Button"
     Then The "Toffee Apple Label" Should Be "Visible"
     Then The "Toffee Apple Image" Should Be "Enabled"
-
