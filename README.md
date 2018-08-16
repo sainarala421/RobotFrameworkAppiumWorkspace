@@ -56,6 +56,7 @@ NOTE: Create a tumblr account and replace the email found in this codebase
 - [ ] [archanist](https://github.com/phacility/arcanist), the command line tool for Phabricator
 
 ## Installation
+## ANDROID MOBILE APP TEST AUTOMATION
 ### Android SDK Installation
 Note: This setup is for MacOS. I cannot guarantee that this will also work for Ubuntu or Windows.
 
@@ -65,7 +66,6 @@ brew tap caskroom/cask
 brew cask install android-sdk
 ```
 
-## ANDROID
 ### Emulators Setup
 Note: You may create an alias for the commands for easy test execution.
 1. Download packages. For reference, see [link](https://stackoverflow.com/questions/43275238/how-to-set-system-images-path-when-creating-an-android-avd). 
@@ -165,7 +165,7 @@ JSON (see step 5)
   "appActivity": "com.tumblr.onboarding.PreOnboardingActivity"
 }
 ```
-## IOS
+## iOS MOBILE APP TEST AUTOMATION
 ### Open and Build the iOS [Candy Search App](https://koenig-media.raywenderlich.com/uploads/2017/10/CandySearch_4_Finished.zip)
 1. Open XCode.
 2. Open the application workspace in XCode. Double-click `CandySearch.xcodeproj`.
