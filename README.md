@@ -134,17 +134,17 @@ export PATH=$PATH:$TUMBLR_USERNAME
 3. Click Start Server button
 4. Open a new session
     1. Appium > New Session Window… or Command + N
-    2. Select ‘Custom Server’ : for some reason, I can’t run an app via the ‘Automatic Server’
+    2. Select ‘Custom Server’ : for some reason, I can’t run an app via the `Automatic Server`
     3. Fillout the following fields:
-        1. Remote Host: 127.0.0.1
-        2. Remote Port: 4723
-        3. Remote Path: /wd/hub
+        1. Remote Host: `127.0.0.1`
+        2. Remote Port: `4723`
+        3. Remote Path: `/wd/hub`
         4. SSL: Unchecked! (I’m getting an error if this field is checked)
         5. Click the pencil button on the ‘JSON Representation text field, then copy and paste the following in the JSON Representation text field.
-        6. Click the ‘Save’ button (note: this is a really small icon inside JSON Representation field) the ‘Save As’ (Save As is optional, only if you want to go back to your saved json later)
+        6. Click the `Save` button (note: this is a really small icon inside JSON Representation field) the `Save As` (Save As is optional, only if you want to go back to your saved json later)
         7. After Clicking Save, the ‘Desired Capabilities’ fields will be populated based on the JSON values.
         8. For some reason, we still need to tweak it! 
-            * Look for the ‘app’, update ‘text’ to ‘filepath’, note, it clears the field, you need to manually set the value by opening the Tumblr apk in the directory where you saved it.
+            * Look for the `app`, update `text` to `filepath`, note, it clears the field, you need to manually set the value by browsing to the `Tumblr` apk in the directory where you saved it.
         9. Click Start Session
                 * If successful, this will open the Tumblr app, Click on any button, it will display the details for that element that you can use for automation. 
 
