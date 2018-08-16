@@ -1,17 +1,11 @@
 # Robot Framework Mobile Automation Using Appium Library
 
-This repository contains the Robot Framework Demo workspace. The following topics are covered:
-
-Demo Directory     | Description
------------------- | -------------
-`Demo1_Basic`      | robot framework scripts using the keywords from libraries
-`Demo2_Refactored` | variables and keywords into Variables and Keywords sections respectively
-`Demo3_Composite`  | separation of variables, keywords into different .robot files and creation of higer level keywords
-`Demo4_Extended`   | extending robot framework for jenkins, report portal, docker-selenium. added option for headless chrome test exection and creation of higher level keywords
-
+This repository contains the Robot Framework Appium Automation workspace.
 ## Directory Structure
 Directory                 | Description
 ------------------------- | -------------
+`src/android`             | android test automation suites
+`src/ios`                 | iOS test automation suites
 `common`                  | contains custom Robot Framework libraries and keywords that will be used by the test suites.
 `JenkinsFiles`            | contains the Jenkins file using declarative pipeline syntax for test execution in parallel
 `common\custom_libraries` | contains the custom libraries
@@ -249,7 +243,7 @@ export PATH=$PATH:$SAUCE_ACCESS_KEY
 ```
 Then run the script on Remote URL using the following script.
 ```bash
-robot -A argument_file.robot -v BASE_URL:http://automationpractice.com -v BROWSER:firefox -v REMOTE_URL:http://ondemand.saucelabs.com/wd/hub -i DataDrivenLoginTest .
+robot -A argument_file.robot -v REMOTE_URL:http://ondemand.saucelabs.com/wd/hub -i Android* .
 ```
 
 Jenkins Setup (Optional)
