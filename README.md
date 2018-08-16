@@ -8,8 +8,8 @@ Directory                 | Description
 `src/ios`                 | iOS test automation suites
 `common`                  | contains custom Robot Framework libraries and keywords that will be used by the test suites.
 `JenkinsFiles`            | contains the Jenkins file using declarative pipeline syntax for test execution in parallel
-`common\custom_libraries` | contains the custom libraries
-`common\global_resources` | contains the step definitions, test data and global reusable keywords
+`common/custom_libraries` | contains the custom libraries
+`common/global_resources` | contains the step definitions, test data and global reusable keywords
 `Results`                 | directory for report and logs, created on run time
 
 File                  | Description
