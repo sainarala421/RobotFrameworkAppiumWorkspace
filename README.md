@@ -28,7 +28,7 @@ File                  | Description
 ## Prerequisites
 Platform            | Application / Requirements    | Links / Notes
 ------------------- | ----------------------------- | ------------
-All (Android / iOS) | Appium Desktop Apps           | [Link](http://appium.io/downloads.html)
+All (Android / iOS) | Appium Desktop App            | [Link](http://appium.io/downloads.html)
 All (Android / iOS) | Python 2.7                    | [Link](https://www.python.org/download/releases/2.7/)
 All (Android / iOS) | Git                           | [Link](https://git-scm.com/)
 All (Android / iOS) | Sublime Text 2 or VSCode      | [Sublime Text 2 Link](https://www.sublimetext.com/2), [VSCode Link](https://code.visualstudio.com/)
@@ -106,7 +106,6 @@ export PATH=$PATH:$APP_PATH
 ```
 
 ### Environment Variables : Android
-# For android mobile automation
 ```bash
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk:$PATH"
 export ANDROID_HOME="/Users/<your user name>/Library/Android/sdk"
