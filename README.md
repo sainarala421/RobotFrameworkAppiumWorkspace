@@ -146,7 +146,7 @@ export PATH=$PATH:$TUMBLR_USERNAME
         8. For some reason, we still need to tweak it! 
             * Look for the `app`, update `text` to `filepath`, note, it clears the field, you need to manually set the value by browsing to the `Tumblr` apk in the directory where you saved it.
         9. Click Start Session
-                * If successful, this will open the Tumblr app, Click on any button, it will display the details for that element that you can use for automation. 
+            * If successful, this will open the Tumblr app, Click on any button, it will display the details for that element that you can use for automation. 
 
 JSON (see step 5)
 ```json
@@ -170,27 +170,33 @@ JSON (see step 5)
 
 ### Troubleshooting
 > **Error**: `LSOpenURLsWithRole() failed with error -10810 for the file /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
+
 > **Fix**: Open Xcode and install necessary updates
 
 > **Error**: `No assigned Development Team`
+
 > **Fix**:
 > 1. Open the Candy Bar Sample App’s workspace in Xcode
 > 2. Select the ‘General’ tab (located at the Project Editor, in the middle top of your screen)
 > 3. In ‘Signing’ section, assign a team (or add an account), Note that this requires your Apple ID  
 
 > **Error**: `Bundle Identifier`
+
 > **Fix**: Under ‘Identity’ section, append a unique string to the ‘Bundle Identifier’
 
 > **Error**: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: "Carthage binary is not found. Install using `brew install carthage` 
+
 > **Fix**: Install carthage, follow the instruction above, i.e. `brew install carthage`. 
 
 > **Error**: `An unknown server-side error occurred while processing the command. Original error: Could not install app: 'Command 'ios-deploy --id 465z597f28y39ad2e50f4850dd58aa44166832da --bundle /Users/<yourusername>/Documents/AppiumWorkspace/iOSApp/CandySearch.app' exited with code 253'`
+
 > **Fix**:
 > Use the path where the app was built.
 > In Xcode > Products (folder) > Right-click CandySearch.app > Show in Finder…
 > Products folder is located on the left column / window of Xcode
 
 > **Error**:`An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: "xcodebuild failed with code 65". Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+
 > **Fix**: https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md`
 > You need a valid Apple Developer ID 
 
