@@ -58,6 +58,7 @@ NOTE: Create a tumblr account and replace the email found in this codebase
 ## Installation
 ### Android SDK Installation
 Note: This setup is for MacOS. I cannot guarantee that this will also work for Ubuntu or Windows.
+
 Run the following command in the terminal:
 ```bash
 brew tap caskroom/cask
@@ -67,17 +68,17 @@ brew cask install android-sdk
 ## ANDROID
 ### Emulators Setup
 Note: You may create an alias for the commands for easy test execution.
-1. Download packages. For reference, [see](https://stackoverflow.com/questions/43275238/how-to-set-system-images-path-when-creating-an-android-avd)
-Run the following in the terminal
+1. Download packages. For reference, see [link](https://stackoverflow.com/questions/43275238/how-to-set-system-images-path-when-creating-an-android-avd). 
+Run the following in the terminal:
 ```bash
 ~/Library/Android/sdk/tools/bin/sdkmanager "system-images;android-23;google_apis;x86"
 ```
-2. Create AVD (Android Virtual Device): Run the following in the terminal, note “echo no |” is optional
+2. Create AVD (Android Virtual Device): Run the following in the terminal, note `echo no |` is optional
 ```bash
 echo no | ~/Library/Android/sdk/tools/bin/avdmanager create avd --force --name testAVD --abi google_apis/x86_64 --package 'system-images;android-23;google_apis;x86_64'
 ```
-* The emulator name is ‘testAVD’, this is arbitrary and you can assign any value
-* We’ll use this name later in running our scripts as a value for the desired capability: deviceName
+* The emulator name is `testAVD`, this is arbitrary and you can assign any value
+* We’ll use this name later in running our scripts as a value for the desired capability: `deviceName`
 * If there is an error, modify your command to non-64bit:
 ```bash
 echo no | ~/Library/Android/sdk/tools/bin/avdmanager create avd --force --name testAVD --abi google_apis/x86 --package 'system-images;android-23;google_apis;x86'
@@ -90,7 +91,7 @@ echo no | ~/Library/Android/sdk/tools/bin/avdmanager list avd
 ```bash
 echo no | ~/Library/Android/sdk/tools/emulator @testAVD
 ```
-* This will open an android emulator screen
+* This will open an android emulator screen.
 * Keyboard shortcuts:
     * Make the screen larger: Command + Arrow Up
     * Make the screen smaller: Command + Arrow Down
@@ -103,7 +104,6 @@ echo no | ~/Library/Android/sdk/tools/emulator @testAVD
 export APP_PATH="/Users/<yourusername>/<yourlocalpath>/"
 export PATH=$PATH:$APP_PATH
 ```
-Note: Update the path value to the right directory name.
 
 ### Environment Variables : Android
 # For android mobile automation
@@ -132,9 +132,7 @@ export TUMBLR_USERNAME="<your tumblr username>"
 export PATH=$PATH:$TUMBLR_USERNAME
 ```
 
-### Optional. Do this manual steps just to check if you have installed everything correctly
-Manual Installation of Tumblr APK via Appium
-We’ll do this manually, just to check if we can install an app via apk (android package kit)
+### Optional. Do this manual installation of the apk just to check if you have installed everything correctly.
 1. Open Appium
     * In Mac, Appium is located in `Applications` directory.
 2. Fillout the following fields:
@@ -229,7 +227,7 @@ Run tests by suite               | `robot -A argument_file.robot -s AndroidTumbl
 Run tests by tag                 | `robot -A argument_file.robot -i AndroidTumblrTest .`
 Run tests via tag wildcards      | `robot -A argument_file.robot -i Android* .`
  
-Running Tests Remotely: Sauce Labs  ---- F O R  U P D A T E
+Running Tests Remotely: Sauce Labs  ---- **STILL UPDATING THIS PART**
 ----------------------------------
 Running tests in Selenium Grid, set `REMOTE_URL` to the Saucelabs URI: `http://ondemand.saucelabs.com/wd/hub`
 NOTE: Creat a Sauce Labs account then save the Sauce Labs Username and Access Key as environment variables.
