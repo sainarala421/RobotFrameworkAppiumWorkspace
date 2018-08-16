@@ -10,14 +10,11 @@ selenium-screenshot-*
 *$py.class
 .venv
 venv/
-.tox
 cover
 coverage.xml
 .coverage
 pylint.out
 xunit.xml
-nosetests.xml
-geckodriver.log
 *DS_Store
 package-lock.json
 node_modules
