@@ -2,27 +2,21 @@
 
 This repository contains the Robot Framework Demo workspace. The following topics are covered:
 
-Demo Directory | Description
--------------- | -------------
-`Demo1_Basic`  | robot framework scripts using the keywords from libraries
+Demo Directory     | Description
+------------------ | -------------
+`Demo1_Basic`      | robot framework scripts using the keywords from libraries
 `Demo2_Refactored` | variables and keywords into Variables and Keywords sections respectively
-`Demo3_Composite` | separation of variables, keywords into different .robot files and creation of higer level keywords
-`Demo4_Extended` | extending robot framework for jenkins, report portal, docker-selenium. added option for headless chrome test exection and creation of higher level keywords
+`Demo3_Composite`  | separation of variables, keywords into different .robot files and creation of higer level keywords
+`Demo4_Extended`   | extending robot framework for jenkins, report portal, docker-selenium. added option for headless chrome test exection and creation of higher level keywords
 
 ## Directory Structure
-Directory | Description
--------------- | -------------
-`common` | contains custom Robot Framework libraries and keywords that will be used by the test suites.
-`JenkinsFiles` | contains the Jenkins file using declarative pipeline syntax for test execution in parallel
+Directory                 | Description
+------------------------- | -------------
+`common`                  | contains custom Robot Framework libraries and keywords that will be used by the test suites.
+`JenkinsFiles`            | contains the Jenkins file using declarative pipeline syntax for test execution in parallel
 `common\custom_libraries` | contains the custom libraries
 `common\global_resources` | contains the step definitions, test data and global reusable keywords
-`Demo4_Extended` | contains the workspace for the composite and extended robot framework for http://automationpractice.com
-`Demo4_Extended\src\demo\resources` | contains the keywords specific for Demo4_Extended
-`Demo4_Extended\src\demo\resources` | contains the test suites for Demo4_Extended
-`Demo4_Extended\src\demo\suite\availability` | test suites with test cases for checking pages' availability. assert that all page's elements are visible
-`Demo4_Extended\src\demo\suite\functionality` | test suites with test cases checking pages' functionality
-`Demo4_Extended\src\demo\suite\endtoend` | test suites with end to end test cases
-`Results` | directory for report and logs, created on run time
+`Results`                 | directory for report and logs, created on run time
 
 File                  | Description
 --------------------- | --------------------------------
@@ -35,17 +29,17 @@ File                  | Description
 Platform            | Application / Requirements    | Links / Notes
 ------------------- | ----------------------------- | ------------
 All (Android / iOS) | Appium Desktop Apps           | [Link](http://appium.io/downloads.html)
-                    | Python 2.7                    | [Link](https://www.python.org/download/releases/2.7/)
-                    | Git                           | [Link](https://git-scm.com/)
-                    | Sublime Text 2 or VSCode      | [Sublime Text 2 Link](https://www.sublimetext.com/2), [VSCode Link](https://code.visualstudio.com/)
+All (Android / iOS) | Python 2.7                    | [Link](https://www.python.org/download/releases/2.7/)
+All (Android / iOS) | Git                           | [Link](https://git-scm.com/)
+All (Android / iOS) | Sublime Text 2 or VSCode      | [Sublime Text 2 Link](https://www.sublimetext.com/2), [VSCode Link](https://code.visualstudio.com/)
 Android             | JDK 8                         | [Link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-                    | Android Studio                | [Link](https://developer.android.com/studio/index.html)
-                    | Android SDK                   | See [Android SDK Installation](#android-sdk-installation)
-                    | Emulators                     | See [Android Emulators Setup](#android-emulators-setup)
+Android             | Android Studio                | [Link](https://developer.android.com/studio/index.html)
+Android             | Android SDK                   | See [Android SDK Installation](#android-sdk-installation)
+Android             | Emulators                     | See [Android Emulators Setup](#android-emulators-setup)
 iOS                 | MacOS                         | Requires a Mac.
-                    | Xcode                         | Requires a Mac.
-                    | Apple Developer ID            | Required for execution in iOS devices (non-simulator). [Link](https://developer.apple.com/)
-                    | Emulators                     | See [iOS Simulators Setup](#ios-simulators-setup)
+iOS                 | Xcode                         | Requires a Mac.
+iOS                 | Apple Developer ID            | Required for execution in iOS devices (non-simulator). [Link](https://developer.apple.com/)
+iOS                 | Emulators                     | See [iOS Simulators Setup](#ios-simulators-setup)
 
 ## Test Applications Used In This Codebase
 NOTE: Create a tumblr account and replace the email found in this codebase
@@ -55,7 +49,7 @@ NOTE: Create a tumblr account and replace the email found in this codebase
 ## Optional Applications / Services
 - [ ]  :octocat: `git repository for your code` - if you are running on `Jenkins pipeline`
 - [ ] [Jenkins war file](https://jenkins.io/download/)
-- [ ] [Sauce Labs] (https://saucelabs.com/)
+- [ ] [Sauce Labs](https://saucelabs.com/)
 - [ ] [Docker](https://www.docker.com/)
 - [ ] [Report Portal](http://reportportal.io/)
 - [ ] [Phabricator](https://www.phacility.com/) 
@@ -82,9 +76,9 @@ Run the following in the terminal
 ```bash
 echo no | ~/Library/Android/sdk/tools/bin/avdmanager create avd --force --name testAVD --abi google_apis/x86_64 --package 'system-images;android-23;google_apis;x86_64'
 ```
-    * The emulator name is ‘testAVD’, this is arbitrary and you can assign any value
-    * We’ll use this name later in running our scripts as a value for the desired capability: deviceName
-    * If there is an error, modify your command to non-64bit:
+* The emulator name is ‘testAVD’, this is arbitrary and you can assign any value
+* We’ll use this name later in running our scripts as a value for the desired capability: deviceName
+* If there is an error, modify your command to non-64bit:
 ```bash
 echo no | ~/Library/Android/sdk/tools/bin/avdmanager create avd --force --name testAVD --abi google_apis/x86 --package 'system-images;android-23;google_apis;x86'
 ```
@@ -96,10 +90,10 @@ echo no | ~/Library/Android/sdk/tools/bin/avdmanager list avd
 ```bash
 echo no | ~/Library/Android/sdk/tools/emulator @testAVD
 ```
-	* This will open an android emulator screen
-    * Keyboard shortcuts:
-        * Make the screen larger: Command + Arrow Up
-        * Make the screen smaller: Command + Arrow Down
+* This will open an android emulator screen
+* Keyboard shortcuts:
+    * Make the screen larger: Command + Arrow Up
+    * Make the screen smaller: Command + Arrow Down
 
 ### Download And Save The Sample Apps In Your Local Directory
 1. Download the sample Android App: [Tumblr apk](https://www.dropbox.com/s/atcowcsmi8qn4ym/com.tumblr.apk?dl=0)
@@ -184,32 +178,30 @@ JSON (see step 5)
     * You have the option to copy it in an accessible directory or just leave it there and take not of the directory or path for usage in Appium.`
 
 ### Troubleshooting
-Error: `LSOpenURLsWithRole() failed with error -10810 for the file /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
-Fix: Open Xcode and install necessary updates
+> **Error**: `LSOpenURLsWithRole() failed with error -10810 for the file /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
+> **Fix**: Open Xcode and install necessary updates
 
-Error: `No assigned Development Team`
-Fix:
-1. Open the Candy Bar Sample App’s workspace in Xcode
-2. Select the ‘General’ tab (located at the Project Editor, in the middle top of your screen)
-3. In ‘Signing’ section, assign a team (or add an account), Note that this requires your Apple ID  
+> **Error**: `No assigned Development Team`
+> **Fix**:
+> 1. Open the Candy Bar Sample App’s workspace in Xcode
+> 2. Select the ‘General’ tab (located at the Project Editor, in the middle top of your screen)
+> 3. In ‘Signing’ section, assign a team (or add an account), Note that this requires your Apple ID  
 
-Error: `Bundle Identifier`
-Fix: Under ‘Identity’ section, append a unique string to the ‘Bundle Identifier’
+> **Error**: `Bundle Identifier`
+> **Fix**: Under ‘Identity’ section, append a unique string to the ‘Bundle Identifier’
 
-Error: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: "Carthage binary is not found. Install using `brew install carthage` 
-Fix: Install carthage, follow the instruction above, i.e. `brew install carthage`. 
+> **Error**: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: "Carthage binary is not found. Install using `brew install carthage` 
+> **Fix**: Install carthage, follow the instruction above, i.e. `brew install carthage`. 
 
-Error
-`An unknown server-side error occurred while processing the command. Original error: Could not install app: 'Command 'ios-deploy --id 465z597f28y39ad2e50f4850dd58aa44166832da --bundle /Users/<yourusername>/Documents/AppiumWorkspace/iOSApp/CandySearch.app' exited with code 253'`
-Fix:
-Use the path where the app was built.
-In Xcode > Products (folder) > Right-click CandySearch.app > Show in Finder…
-Products folder is located on the left column / window of Xcode
+> **Error**: `An unknown server-side error occurred while processing the command. Original error: Could not install app: 'Command 'ios-deploy --id 465z597f28y39ad2e50f4850dd58aa44166832da --bundle /Users/<yourusername>/Documents/AppiumWorkspace/iOSApp/CandySearch.app' exited with code 253'`
+> **Fix**:
+> Use the path where the app was built.
+> In Xcode > Products (folder) > Right-click CandySearch.app > Show in Finder…
+> Products folder is located on the left column / window of Xcode
 
-Error
-`An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: "xcodebuild failed with code 65". Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
-Solution: https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md`
-Fix: You need a valid Apple Developer ID 
+> **Error**:`An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: "xcodebuild failed with code 65". Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+> **Fix**: https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md`
+> You need a valid Apple Developer ID 
 
 ### iOS Simulators Setup
 Run the following command in the terminal:
@@ -229,13 +221,13 @@ instruments -s devices
     *   http://appium.io/docs/en/writing-running-appium/caps/index.html
 
 ## Running Tests
-Method                       | Script
----------------------------- | -------------
-Run all tests in a directory | `robot -A argument_file.robot src/android`
+Method                           | Script
+-------------------------------- | -------------
+Run all tests in a directory     | `robot -A argument_file.robot src/android`
 Run a specific test via filename | `robot -A argument_file.robot src/android/suite/native_app/AndroidTumblrTest.robot`
-Run tests by suite | `robot -A argument_file.robot -s AndroidTumblrTest .`
-Run tests by tag | `robot -A argument_file.robot -i AndroidTumblrTest .`
-Run tests via tag wildcards | `robot -A argument_file.robot -i Android* .`
+Run tests by suite               | `robot -A argument_file.robot -s AndroidTumblrTest .`
+Run tests by tag                 | `robot -A argument_file.robot -i AndroidTumblrTest .`
+Run tests via tag wildcards      | `robot -A argument_file.robot -i Android* .`
  
 Running Tests Remotely: Sauce Labs  ---- F O R  U P D A T E
 ----------------------------------
@@ -319,6 +311,11 @@ Framework Assistant` and press Enter.
 10. Restart Sublime.
 11. `Robot Framework` Menu should be visible.
 
+## Additional References
+[Key Codes](https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_HOME)
+
 Feel free to reverse engineer and refactor! :rocket:
 ----------------------------------------------------
+
+
 
