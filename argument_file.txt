@@ -17,3 +17,14 @@
 #==========================================================#
 --exclude ARCHIVED
 
+#==========================================================#
+#                  Output Directory
+#==========================================================#
+--outputdir Results
+
+#==========================================================#
+# Remove all but the last failing keyword inside,
+# `BuiltIn.Wait Until Keyword Succeeds`, and For loop
+#==========================================================#
+--removekeywords for
+--removekeywords wuks
