@@ -13,11 +13,10 @@ ${emailAddress}         mobileautomationtestuser@gmail.com
 
 *** Test Cases ***
 Scenario: Returning User Successfully Logs In To Tumblr
-    When User Clicks "Login" "Button"
+    When User Clicks "Login Button"
     And User Inputs Text "${emailAddress}" In "Email Field"
-    And User Clicks "Continue" "Button"
+    And User Clicks "Continue Button"
+    And User Clicks "Enter Password Button"
     And User Inputs Password "%{TUMBLR_PASS}" In "Password Field"
-    And User Clicks "Login" "Button"
-    Then The "Home Button" Should Be "Visible"
-    And The "Account Button" Should Be "Visible"
-    And The "Login Button" Should Be "Visible"
+    And User Presses "Enter Key"
+    Then The "User Dashboard" Elements Should Be Loaded Successfully

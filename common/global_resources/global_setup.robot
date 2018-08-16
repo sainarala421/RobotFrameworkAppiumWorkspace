@@ -9,6 +9,7 @@ Library           HttpLibrary.HTTP
 Resource          appiumdriver_config.robot
 Resource          global_filepaths.robot
 Resource          global_helpers.robot
+Resource          constants.robot
 
 *** Variables ***
 #=================================================#
