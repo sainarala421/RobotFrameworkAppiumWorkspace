@@ -177,12 +177,12 @@ JSON (see step 5)
 
 > **Fix**:
 > 1. Open the Candy Bar Sample App’s workspace in Xcode
-> 2. Select the ‘General’ tab (located at the Project Editor, in the middle top of your screen)
+> 2. Select the `General` tab (located at the Project Editor, in the middle top of your screen)
 > 3. In ‘Signing’ section, assign a team (or add an account), Note that this requires your Apple ID  
 
 > **Error**: `Bundle Identifier`
 
-> **Fix**: Under ‘Identity’ section, append a unique string to the ‘Bundle Identifier’
+> **Fix**: Under ‘Identity’ section, append a unique string to the `Bundle Identifier`
 
 > **Error**: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: "Carthage binary is not found. Install using `brew install carthage` 
 
@@ -217,7 +217,12 @@ instruments -s devices
 4. See this link for desired capabilities: 
     *   http://appium.io/docs/en/writing-running-appium/caps/index.html
 
-## Running Tests
+## Running Tests in Appium Server
+###: Before running the tests checklists:
+[x] All prerequiste applications are installed
+[x] Simulator / Emultors are running
+[x] Appium Application and Appium Server is running
+
 Method                           | Script
 -------------------------------- | -------------
 Run all tests in a directory     | `robot -A argument_file.robot src/android`
@@ -226,9 +231,8 @@ Run tests by suite               | `robot -A argument_file.robot -s AndroidTumbl
 Run tests by tag                 | `robot -A argument_file.robot -i AndroidTumblrTest .`
 Run tests via tag wildcards      | `robot -A argument_file.robot -i Android* .`
  
-Running Tests Remotely: Sauce Labs  ---- **STILL UPDATING THIS PART**
-----------------------------------
-Running tests in Selenium Grid, set `REMOTE_URL` to the Saucelabs URI: `http://ondemand.saucelabs.com/wd/hub`
+## Running Tests Remotely: Sauce Labs  ---- **STILL UPDATING THIS PART**
+Running tests in Sauce Labs, set `REMOTE_URL` to the Saucelabs URI: `http://ondemand.saucelabs.com/wd/hub`
 NOTE: Creat a Sauce Labs account then save the Sauce Labs Username and Access Key as environment variables.
 
 GET SAUCELABS DETAILS:

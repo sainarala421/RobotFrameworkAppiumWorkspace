@@ -2,14 +2,14 @@
 Documentation    This file contains all the global constants for Tumblr
 
 *** Variables ***
-${GET_STARTED_BUTTON}      id=com.tumblr:id/primary_button
-${AGE_TEXT_FIELD}          id=com.tumblr:id/age
+${GET_STARTED_BUTTON}        id=com.tumblr:id/primary_button
+${AGE_TEXT_FIELD}            id=com.tumblr:id/age
 
-${LOGIN_BUTTON}            id=com.tumblr:id/secondary_button
-${EMAIL_FIELD}             id=com.tumblr:id/email
-${PASSWORD_FIELD}          id=com.tumblr:id/password
-${USERNAME_FIELD}          id=com.tumblr:id/username
-${NEXT_BUTTON}             id=com.tumblr:id/primary_button
+${LOGIN_BUTTON}              id=com.tumblr:id/secondary_button
+${EMAIL_FIELD}               id=com.tumblr:id/email
+${PASSWORD_FIELD}            id=com.tumblr:id/password
+${USERNAME_FIELD}            id=com.tumblr:id/username
+${NEXT_BUTTON}               id=com.tumblr:id/primary_button
 
 ${CONTINUE_BUTTON}           id=com.tumblr:id/primary_button
 ${ENTER_PASSWORD_BUTTON}     id=com.tumblr:id/use_password_button
@@ -37,8 +37,8 @@ ${ACCOUNT_BUTTON}              id=com.tumblr:id/topnav_account_button_img_active
 
 ${STATUS_BACKGROUND}           id=android:id/statusBarBackground
 
-${POSTCARD_HEADER}                id=com.tumblr:id/post_card_header
-${POST_IMAGE}                     id=com.tumblr:id/image
-@{POST_CONTENT}                   ${POSTCARD_HEADER}    ${POST_IMAGE}
+${POSTCARD_HEADER}             id=com.tumblr:id/post_card_header
+${POST_IMAGE}                  id=com.tumblr:id/image
+@{POST_CONTENT}                ${POSTCARD_HEADER}    ${POST_IMAGE}
 
 @{USER_DASHBOARD_CORE_ELEMENTS_LIST}    ${STATUS_BACKGROUND}    @{NAVIGATION_BUTTONS}    ${POSTCARD_HEADER}

@@ -1,7 +1,7 @@
 #==========================================================#
 #                  GLOBAL VARIABLES SETUP PATH
 #==========================================================#
---variable MOBILE_GLOBAL_RESOURCES_FILE_PATH:../../../../common/global_resources/
+--variable MOBILE_GLOBAL_RESOURCES_FILE_PATH:../../../../../common/global_resources/
 
 #==========================================================#
 #                  GLOBAL VARIABLES FOR TEST SUITES

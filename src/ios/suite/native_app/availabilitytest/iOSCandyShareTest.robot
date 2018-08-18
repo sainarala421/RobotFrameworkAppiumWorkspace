@@ -3,9 +3,12 @@ Documentation     [PRODUCT:iOS] Test App
 Default Tags       iOSCandyShareTest    IOS    AVAILABILITY    HIGH
 Suite Setup        Launch "IOS" Application "${CANDY_SHARE_APP}"
 Suite Teardown     Close All Applications
-Test Teardown      User Clicks "Back" "Button"
+Test Teardown      User Clicks "Back Button"
 Resource           ${MOBILE_GLOBAL_RESOURCES_FILE_PATH}global_setup.robot
 Resource           ${IOS_VARIABLE_DIR}candy_share_constants.robot
+
+*** Variables ***
+${CANDY_SHARE_APP}    %{APP_PATH}iOSApp/CandySearch.app
 
 *** Test Cases ***
 Scenario: User Successfully Opens The Chocolote Bar Page

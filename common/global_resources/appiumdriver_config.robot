@@ -1,7 +1,7 @@
 *** Variables ***
 ${DEV.APPIUM_SERVER}               http://127.0.0.1:4723/wd/hub
 # IOS Default Desired Capabilities
-${DEV.IOS.PLATFORM_VERSION}        11.2
+${DEV.IOS.PLATFORM_VERSION}        11.3
 ${DEV.IOS.PLATFORM_NAME}           iOS
 ${DEV.IOS.DEVICE_NAME}             iPhone Simulator
 ${DEV.IOS.APP}                     %{APP_PATH}iOSApp/CandySearch.app

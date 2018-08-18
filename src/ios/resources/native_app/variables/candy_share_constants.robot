@@ -3,7 +3,7 @@ Documentation    This file contains all the global constants for IOS
 
 *** Variables ***
 # *** app directory *** #
-${CANDY_SHARE_APP}            /Users/jarvis2/Documents/AppiumWorkspace/iOSApp/CandySearch.app
+# ${CANDY_SHARE_APP}            %{APP_PATH}/iOSApp/CandySearch.app
 
 # *** locators *** #
 # *** headers *** #
