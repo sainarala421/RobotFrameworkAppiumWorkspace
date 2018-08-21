@@ -261,7 +261,7 @@ robot -A argument_file.robot -v REMOTE_URL:http://ondemand.saucelabs.com/wd/hub 
 
 ### Get Saucelabs device capabilities:
 1. Open the [platform configurator](https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/)
-2. Input /s elect the applicable device details.
+2. Input / select the applicable device details.
 3. Add or update the capabilities in `common/global_resources/devices/<platform>/<platform>capabiities.robot`
 
 Jenkins Setup (Optional)
