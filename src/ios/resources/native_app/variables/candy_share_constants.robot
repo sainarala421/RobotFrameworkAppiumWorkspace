@@ -2,10 +2,6 @@
 Documentation    This file contains all the global constants for IOS
 
 *** Variables ***
-# *** app directory *** #
-# ${CANDY_SHARE_APP}            %{APP_PATH}/iOSApp/CandySearch.app
-
-# *** locators *** #
 # *** headers *** #
 ${CANDY_SEARCH_HEADER}        xpath=//XCUIElementTypeNavigationBar[@name="Master"]
 ${BACK_BUTTON}                accessibility_id=Back

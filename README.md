@@ -123,6 +123,8 @@ export TUMBLR_PASS="<your tumblr password>"
 export PATH=$PATH:$TUMBLR_PASS
 export TUMBLR_USERNAME="<your tumblr username>"
 export PATH=$PATH:$TUMBLR_USERNAME
+export TUMBLR_EMAIL="<your tumblr email address>"
+export PATH=$PATH:$TUMBLR_EMAIL
 ```
 
 ### Optional. Do this manual installation of the apk just to check if you have installed everything correctly.
@@ -231,11 +233,12 @@ Run tests by suite               | `robot -A argument_file.robot -s AndroidTumbl
 Run tests by tag                 | `robot -A argument_file.robot -i AndroidTumblrTest .`
 Run tests via tag wildcards      | `robot -A argument_file.robot -i Android* .`
  
-## Running Tests Remotely: Sauce Labs  ---- **STILL UPDATING THIS PART**
-Running tests in Sauce Labs, set `REMOTE_URL` to the Saucelabs URI: `http://ondemand.saucelabs.com/wd/hub`
-NOTE: Creat a Sauce Labs account then save the Sauce Labs Username and Access Key as environment variables.
+## Running Tests in Sauce Labs
+Running tests in Sauce Labs, set `REMOTE_URL` to the Saucelabs URI: `saucelabs`.
 
-GET SAUCELABS DETAILS:
+NOTE: Create a Sauce Labs account then save the Sauce Labs Username and Access Key as environment variables.
+
+### Get Saucelabs credentials:
 1. Signup with Sauce Labs: `https://saucelabs.com`.
 2. Sign in to Sauce Labs.
 3. Click user icon on top right.
@@ -255,6 +258,11 @@ Then run the script on Remote URL using the following script.
 ```bash
 robot -A argument_file.robot -v REMOTE_URL:http://ondemand.saucelabs.com/wd/hub -i Android* .
 ```
+
+### Get Saucelabs device capabilities:
+1. Open the [platform configurator](https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/)
+2. Input /s elect the applicable device details.
+3. Add or update the capabilities in `common/global_resources/devices/<platform>/<platform>capabiities.robot`
 
 Jenkins Setup (Optional)
 ------------------------

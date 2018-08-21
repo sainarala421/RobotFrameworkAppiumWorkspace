@@ -1,10 +1,11 @@
 *** Settings ***
-Documentation     [PRODUCT:iOS] Test App
+Documentation      [PRODUCT:iOS] Login test for iOS app
 Default Tags       iOSCandyShareTest    IOS    AVAILABILITY    HIGH
-Suite Setup        Launch "IOS" Application "${CANDY_SHARE_APP}"
+Force Tags         REGRESSION    Mobile
+Suite Setup        Open "IOS" Application "${CANDY_SHARE_APP}"
 Suite Teardown     Close All Applications
 Test Teardown      User Clicks "Back Button"
-Resource           ${MOBILE_GLOBAL_RESOURCES_FILE_PATH}global_setup.robot
+Resource           ${MOBILE_GLOBAL_RESOURCES_FILE_PATH}libraries.robot
 Resource           ${IOS_VARIABLE_DIR}candy_share_constants.robot
 
 *** Variables ***
