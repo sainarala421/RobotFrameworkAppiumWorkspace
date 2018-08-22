@@ -50,6 +50,20 @@ NOTE: Create a tumblr account and replace the email found in this codebase
 - [ ] [archanist](https://github.com/phacility/arcanist), the command line tool for Phabricator
 
 ## Installation
+### Robot Framework and Prerequisites Installation
+Clone this repository to your local directory.
+Open a terminal and cd to `RobotFrameworkDemoWorkspace` where setup.py is located.
+Run the following in the terminal:
+
+```bash
+pip install -e .
+```
+Or
+```bash
+sudo pip install -e .
+```
+Note: An error may sometimes occur, either rerun the pip install script or search and troubleshoot according to the error message.
+
 ## ANDROID MOBILE APP TEST AUTOMATION
 ### Android SDK Installation
 Note: This setup is for MacOS. I cannot guarantee that this will also work for Ubuntu or Windows.

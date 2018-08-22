@@ -11,8 +11,11 @@ Setup Desired Capabilities For "${e_MOBILE_OS}" Native App
     ...    app=${DEV.${e_MOBILE_OS}.APP}
     ...    appActivity=${DEV.${e_MOBILE_OS}.ACTIVITY_NAME}
 
-    Test Environment Is Sauce Labs
+    Comment    Set the remote URL
     Set Remote URL
+
+    Comment    Check if test environment is saucelabs and add saucelabs credentials in capabilities
+    Test Environment Is Sauce Labs
     Set Sauce Labs Credentials Of "${e_MOBILE_OS}" Device To "${t_DefaultDC}" Dictionary
 
     Set Suite Variable    ${s_DESIRED_CAPABILITIES}    ${t_DefaultDC}
