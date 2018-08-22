@@ -52,7 +52,7 @@ NOTE: Create a tumblr account and replace the email found in this codebase
 ## Installation
 ### Robot Framework and Prerequisites Installation
 Clone this repository to your local directory.
-Open a terminal and cd to `RobotFrameworkDemoWorkspace` where setup.py is located.
+Open a terminal and cd to `AppiumWorkspace` where setup.py is located.
 Run the following in the terminal:
 
 ```bash
